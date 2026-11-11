@@ -1,0 +1,35 @@
+package hoangdangchitai25661361;
+
+public class PhongHocLT extends PhongHoc {
+	private int mayChieu;
+
+	public int getMayChieu() {
+		return mayChieu;
+	}
+
+	public void setMayChieu(int mayChieu) {
+		this.mayChieu = mayChieu;
+	}
+
+	public PhongHocLT(String maPhong, String dayNha, double dienTich, int soBongDen, int mayChieu) {
+		super(maPhong, dayNha, dienTich, soBongDen);
+		this.mayChieu = mayChieu;
+	}
+
+	public PhongHocLT(String maPhong, String dayNha, double dienTich, int soBongDen) {
+		super(maPhong, dayNha, dienTich, soBongDen);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+	    return super.toString() + ", mayChieu=" + mayChieu;
+	}
+	
+	@Override
+	public boolean datChuan()
+	{
+		return super.datChuan() && mayChieu > 0;
+	}
+
+}
