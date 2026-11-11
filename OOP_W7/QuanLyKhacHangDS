@@ -1,0 +1,9 @@
+package hoangdangchitai25661361;
+
+public interface QuanLyKhachHangds {
+   Boolean themKH(KhachHang var1);
+
+   Boolean CapNhat(String var1, double var2);
+
+   Boolean XoaMa(String var1);
+}
